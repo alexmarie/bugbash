@@ -75,9 +75,6 @@ function Game() {
   return (
     <div>
       <h2>Bug Bash Game</h2>
-      <p>
-        Session: <b>{sessionId}</b>
-      </p>
       <div style={{ display: "flex", flexWrap: "wrap", maxWidth: 600 }}>
         {Array.from({ length: bugCount }).map((_, i) => (
           <Bug
@@ -94,7 +91,7 @@ function Game() {
             alt="Trophy"
             style={{ width: 120, display: "block", margin: "0 auto" }}
           />
-          <h3 style={{ textAlign: "center", color: "gold" }}>All bugs squashed! 🏆</h3>
+          <h3 style={{ textAlign: "center", color: "gold" }}>All bugs squashed!</h3>
         </div>
       )}
     </div>
